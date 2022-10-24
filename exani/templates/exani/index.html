@@ -1,0 +1,16 @@
+<h1> CURSOS PROPEDÉUTICOS DEL SUR </h1>
+<h2>      Mérida, Yucatán       </h2>
+
+<img src="http://cetis17.edu.mx/wp-content/uploads/2018/07/curso1.jpg", alt="index", height="400", width="700"/>
+
+{% if latest_course_list %}
+    <ul>
+        {% for course  in latest_course_list %}
+        <li><a href="/exani/{{course.id}}">{{ course.course_text}}</a></li>
+        {% endfor %}
+    <li><a href="/exani/inscription">Inscribete al curso</a></li>
+    </ul>
+    {% else %}
+    <p> No cursos avaliable </p>
+{% endif %}
+

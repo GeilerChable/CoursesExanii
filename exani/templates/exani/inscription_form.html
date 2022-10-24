@@ -1,0 +1,24 @@
+<h1> ÚNETE A CURSOS PROPEDÉUTICOS DEL SUR </h1>
+
+<img src="https://st.depositphotos.com/1854227/4966/i/950/depositphotos_49662537-stock-photo-happy-students-with-books.jpg", alt="index", height="400", width="500"/>
+
+
+<p> En Cursos Propedéuticos del Sur estámos felices porque haz decidido
+    mejorar las habilidades académicas básicas para que te desarrolles en
+    un excelente profesional en un futuro. 
+
+    Para continuar con tu inscripción es necesario llenar algunos datos. 
+
+    Esperamos vernos prontos. 
+</p>
+
+{% block content %}
+<h1> INSCRIBETE </h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}    
+    <button type='submit'> Inscribirme </button>
+</form>
+
+{% endblock %}
